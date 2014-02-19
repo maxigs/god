@@ -4,7 +4,7 @@ Gem::Specification.new do |s|
 
   s.name = 'god'
   s.version = '0.13.3'
-  s.date = '2013-09-25'
+  s.date = '2014-02-19'
 
   s.summary = "Process monitoring framework."
   s.description = "An easy to configure, easy to extend monitoring framework written in Ruby."
@@ -149,6 +149,7 @@ Gem::Specification.new do |s|
     test/test_conditions_process_running.rb
     test/test_conditions_socket_responding.rb
     test/test_conditions_tries.rb
+    test/test_conditions_uptime.rb
     test/test_contact.rb
     test/test_driver.rb
     test/test_email.rb

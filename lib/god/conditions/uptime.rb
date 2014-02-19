@@ -62,7 +62,7 @@ module God
       end
 
       def test
-        if uptime = System::Process.new(self.pid).uptime_seconds > self.above
+        if (uptime = System::Process.new(self.pid).uptime_seconds) > self.above
           self.info = "uptime #{uptime} > #{self.above}"
           return true
         else
