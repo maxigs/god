@@ -59,7 +59,7 @@ module God
       # http://unix.stackexchange.com/questions/62154/when-was-a-process-started
       def uptime_seconds
         stats = stat
-        Time.now.to_i - (uptime - (stats[:starttime].to_i /  @@hertz))
+        (uptime - (stats[:starttime].to_f /  @@hertz)).to_i
       end
 
       private
