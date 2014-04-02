@@ -56,6 +56,7 @@ module God
       end
 
       def uptime_seconds
+        stats = stat
         Time.now.to_i - stats[:starttime].to_i
       end
 
